@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - Personal Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Atlikti darbai</title>
+  <meta name="description" content="Antanas Gedgaudas - Elektronikos inžinierius">
+  <meta name="keywords" content="elektronika, automatizacija, atlikti darbai, MATLAB">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon-16x16.png?v=2" rel="icon" type="image/png" sizes="16x16">
+  <link href="assets/img/favicon.png?v=2" rel="icon" type="image/png" sizes="32x32">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -43,7 +44,6 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Antanas Gedgaudas</h1>
       </a>
 
@@ -53,7 +53,7 @@
           <li><a href="about.html">Apie mane</a></li>
           <li><a href="resume.html">Patirtis</a></li>
           <li><a href="services.html">Paslaugos</a></li>
-          <li><a href="portfolio.html" class="active">Portfelis</a></li>
+          <li><a href="portfolio.html" class="active">Atlikti darbai</a></li>
           <li><a href="contact.html">Kontaktai</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -70,7 +70,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Portfolio</h1>
+              <h1>Atlikti darbai</h1>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Pagrindinis</a></li>
-            <li class="current">Portfolio</li>
+            <li class="current">Atlikti darbai</li>
           </ol>
         </div>
       </nav>
@@ -94,153 +94,91 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">Visi</li>
-            <li data-filter=".filter-automation">Automatika</li>
-            <li data-filter=".filter-electronics">Elektronika</li>
-            <li data-filter=".filter-iot">IoT</li>
-            <li data-filter=".filter-testing">Testavimas</li>
+            <li data-filter=".filter-lab3">3 laboratorinis darbas</li>
+            <li data-filter=".filter-lab4">4 laboratorinis darbas</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-electronics">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-lab3">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/lab3-sampled-function.png" class="img-fluid" width="1127" height="749" alt="MATLAB grafikas f(x) = sin(x) + cos²(x), su pažymėtais skaičiavimo taškais">
                 <div class="portfolio-info">
-                  <h4>Pramoninis valdiklio modulis</h4>
-                  <p>Elektros energijos išdėstymo ir valdymo modulis</p>
-                  <a href="assets/img/portfolio/portfolio-1.webp" title="Pramoninis valdiklio modulis" data-gallery="portfolio-gallery-electronics" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Funkcijos f(x) = sin(x) + cos²(x) grafikas</h4>
+                  <p>Funkcijos reikšmės apskaičiuotos ir atvaizduotos pasirinktame intervale pažymint skaičiavimo taškus.</p>
+                  <a href="assets/img/portfolio/lab3-sampled-function.png" title="Funkcijos f(x) = sin(x) + cos²(x) grafikas" data-gallery="matlab-lab3" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-iot">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-lab3">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/lab3-power-functions.png" class="img-fluid" width="1122" height="749" alt="Trijų laipsninių funkcijų x^e, x^(2e) ir x^(3e) grafikai">
                 <div class="portfolio-info">
-                  <h4>IoT stebėjimo sistema</h4>
-                  <p>Nuotolinio monitoringo mazgas pramoniniams objektams</p>
-                  <a href="assets/img/portfolio/portfolio-10.webp" title="IoT stebėjimo sistema" data-gallery="portfolio-gallery-iot" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Laipsninių funkcijų palyginimas</h4>
+                  <p>Palyginami x<sup>e</sup>, x<sup>2e</sup> ir x<sup>3e</sup> grafikai, parodantys, kaip didesnis laipsnis keičia funkcijų augimą.</p>
+                  <a href="assets/img/portfolio/lab3-power-functions.png" title="Laipsninių funkcijų palyginimas" data-gallery="matlab-lab3" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-lab3">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/lab3-vector-and-bar-charts.png" class="img-fluid" width="1120" height="741" alt="Vektorinis duomenų atvaizdavimas ir tų pačių reikšmių stulpelinė diagrama">
                 <div class="portfolio-info">
-                  <h4>PLC valdymo blokas</h4>
-                  <p>Automatizacijos sistema maitinimo ir apsaugos kontrolei</p>
-                  <a href="assets/img/portfolio/portfolio-7.webp" title="PLC valdymo blokas" data-gallery="portfolio-gallery-automation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Vektorinis ir stulpelinis duomenų atvaizdavimas</h4>
+                  <p>Palyginami vektorinis duomenų vaizdavimas ir tų pačių reikšmių stulpelinė diagrama.</p>
+                  <a href="assets/img/portfolio/lab3-vector-and-bar-charts.png" title="Vektorinis ir stulpelinis duomenų atvaizdavimas" data-gallery="matlab-lab3" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-testing">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-lab3">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/lab3-signal-filtering.png" class="img-fluid" width="1119" height="752" alt="Pradinio ir filtruoto signalo grafikai bei U₁ ribą viršijančios reikšmės">
                 <div class="portfolio-info">
-                  <h4>Galios testavimo stotelė</h4>
-                  <p>Pramoninio įrenginio išbandymo ir kalibravimo sistema</p>
-                  <a href="assets/img/portfolio/portfolio-4.webp" title="Galios testavimo stotelė" data-gallery="portfolio-gallery-testing" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Signalo filtravimas ir ribų analizė</h4>
+                  <p>Palyginami pradinis ir filtruotas signalai, pažymimos U₁ ir U₂ ribos bei išskiriamos U₁ viršijančios reikšmės.</p>
+                  <a href="assets/img/portfolio/lab3-signal-filtering.png" title="Signalo filtravimas ir ribų analizė" data-gallery="matlab-lab3" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-electronics">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-lab4">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/lab4-surface-function.png" class="img-fluid" width="1188" height="729" alt="Trimatės funkcijos sin(|x+y|/20) · e⁻|x+y| paviršiaus grafikas">
                 <div class="portfolio-info">
-                  <h4>Jutiklių skaitymo modulis</h4>
-                  <p>Skaitmeninės ir analoginės signalų apdorojimo plokštė</p>
-                  <a href="assets/img/portfolio/portfolio-2.webp" title="Jutiklių skaitymo modulis" data-gallery="portfolio-gallery-electronics" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Trimačio paviršiaus grafikas</h4>
+                  <p>MATLAB paviršiaus grafike pavaizduota f(x,y) = sin(|x+y|/20) · e<sup>−|x+y|</sup> funkcija.</p>
+                  <a href="assets/img/portfolio/lab4-surface-function.png" title="Trimačio paviršiaus grafikas" data-gallery="matlab-lab4" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-lab4">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/lab4-elliptic-paraboloid.png" class="img-fluid" width="1168" height="749" alt="Trimatis funkcijos f(x,y) = 1 - 2x² - 3y² elipsinio paraboloido grafikas">
                 <div class="portfolio-info">
-                  <h4>Siurbimo linijos valdymas</h4>
-                  <p>Pramoninės automatizacijos sistema vandens ir dujų inžinerijai</p>
-                  <a href="assets/img/portfolio/portfolio-11.webp" title="Siurbimo linijos valdymas" data-gallery="portfolio-gallery-automation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Elipsinio paraboloido grafikas</h4>
+                  <p>Trimatėje erdvėje pavaizduota funkcija f(x,y) = 1 − 2x² − 3y², kurios viršūnė yra ties (0, 0, 1).</p>
+                  <a href="assets/img/portfolio/lab4-elliptic-paraboloid.png" title="Elipsinio paraboloido grafikas" data-gallery="matlab-lab4" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-iot">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-lab4">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/lab4-colormap-comparison.png" class="img-fluid" width="1085" height="692" alt="Vienos 3D funkcijos paviršius, pavaizduotas trimis skirtingais spalvų žemėlapiais">
                 <div class="portfolio-info">
-                  <h4>Įrenginio nuotolinio stebėjimo sistema</h4>
-                  <p>Duomenų rinkimo ir signalų perdavimo platforma</p>
-                  <a href="assets/img/portfolio/portfolio-8.webp" title="Įrenginio nuotolinio stebėjimo sistema" data-gallery="portfolio-gallery-iot" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-testing">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>EMC ir veikimo patikrinimas</h4>
-                  <p>Įrenginių bandymai ir atsparumo vertinimas</p>
-                  <a href="assets/img/portfolio/portfolio-5.webp" title="EMC ir veikimo patikrinimas" data-gallery="portfolio-gallery-testing" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-electronics">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Integruotas signalų modulis</h4>
-                  <p>Analoginių ir skaitmeninių signalų apdorojimo sistema</p>
-                  <a href="assets/img/portfolio/portfolio-3.webp" title="Integruotas signalų modulis" data-gallery="portfolio-gallery-electronics" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-12.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Gamybos linijos automatika</h4>
-                  <p>Valdymo ir stebėjimo sistema gamybos operacijoms</p>
-                  <a href="assets/img/portfolio/portfolio-12.webp" title="Gamybos linijos automatika" data-gallery="portfolio-gallery-automation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-iot">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-9.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Duomenų rinkimo blokas</h4>
-                  <p>Nuotolinio stebėjimo ir diagnostikos sprendimas</p>
-                  <a href="assets/img/portfolio/portfolio-9.webp" title="Duomenų rinkimo blokas" data-gallery="portfolio-gallery-iot" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-testing">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Priežiūros bandymo sistema</h4>
-                  <p>Išankstinio ir periodinio bandymo protokolai</p>
-                  <a href="assets/img/portfolio/portfolio-6.webp" title="Priežiūros bandymo sistema" data-gallery="portfolio-gallery-testing" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Spalvų žemėlapių palyginimas</h4>
+                  <p>Ta pati funkcija z = 1 − x² − y² pateikta trimis spalvų žemėlapiais, palyginant paviršiaus atvaizdavimą.</p>
+                  <a href="assets/img/portfolio/lab4-colormap-comparison.png" title="Spalvų žemėlapių palyginimas" data-gallery="matlab-lab4" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -270,7 +208,7 @@
           <span>Copyright</span> <strong class="px-1 sitename">Antanas Gedgaudas</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          Designed by <a href="https://github.com/The5Anta/The5Anta.github.io">Antanas Gedgaudas</a> | <a href="https://github.com/The5Anta/The5Anta.github.io">Portfolio</a>
+          Designed by <a href="https://github.com/The5Anta/The5Anta.github.io">Antanas Gedgaudas</a> | <a href="https://github.com/The5Anta/The5Anta.github.io">Atlikti darbai</a>
         </div>
       </div>
     </div>

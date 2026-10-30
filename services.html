@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - Personal Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Paslaugos</title>
+  <meta name="description" content="Antanas Gedgaudas - Elektronikos inžinierius">
+  <meta name="keywords" content="elektronika, automatizacija, paslaugos">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon-16x16.png?v=2" rel="icon" type="image/png" sizes="16x16">
+  <link href="assets/img/favicon.png?v=2" rel="icon" type="image/png" sizes="32x32">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -43,7 +44,6 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Antanas Gedgaudas</h1>
       </a>
 
@@ -53,7 +53,7 @@
           <li><a href="about.html">Apie mane</a></li>
           <li><a href="resume.html">Patirtis</a></li>
           <li><a href="services.html" class="active">Paslaugos</a></li>
-          <li><a href="portfolio.html">Portfelis</a></li>
+          <li><a href="portfolio.html">Atlikti darbai</a></li>
           <li><a href="contact.html">Kontaktai</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -169,6 +169,103 @@
 
         </div>
 
+        <div class="service-pricing mt-5">
+          <h2>Paslaugų kainos</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered service-pricing-table">
+              <thead>
+                <tr>
+                  <th scope="col">Paslauga</th>
+                  <th scope="col">Aprašymas</th>
+                  <th scope="col">Kaina</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Elektroninių sistemų projektavimas</td>
+                  <td>Elektroninių schemų ir maitinimo sistemų projektavimas</td>
+                  <td>100 Eur</td>
+                </tr>
+                <tr>
+                  <td>PCB ir modulių kūrimas</td>
+                  <td>PCB projektavimas ir elektroninių prototipų paruošimas</td>
+                  <td>150 Eur</td>
+                </tr>
+                <tr>
+                  <td>Automatika ir valdymo sistemos</td>
+                  <td>Valdiklių, jutiklių ir PLC sistemų integravimas</td>
+                  <td>200 Eur</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row gy-4 mt-3">
+          <div class="col-lg-6">
+            <div class="service-resource">
+              <h2>Naudojamos technologijos ir įrankiai</h2>
+              <ul>
+                <li>KiCad PCB projektavimui</li>
+                <li>PLC valdikliai automatizavimui</li>
+                <li>Matavimo įranga:
+                  <ul>
+                    <li>Osciloskopas signalams tikrinti</li>
+                    <li>Multimetras įtampai ir varžai matuoti</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-resource">
+              <h2>Elektroninės sistemos projektavimo etapai</h2>
+              <ol>
+                <li>Surinkti reikalavimus ir apibrėžti sistemos funkcijas.</li>
+                <li>Parengti elektroninės schemos projektą.</li>
+                <li>Patikrinti ir išbandyti prototipą.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-media mt-5">
+          <h2>Vaizdo ir garso įrašai</h2>
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              <div class="service-media-item">
+                <h3>Darbas kompiuteriu</h3>
+                <div class="ratio ratio-16x9">
+                  <video controls preload="metadata" playsinline>
+                    <source src="assets/media/7534244-hd_1920_1080_25fps.mp4" type="video/mp4">
+                    Jūsų naršyklė nepalaiko vaizdo įrašo atkūrimo.
+                  </video>
+                </div>
+                <p class="mb-0 mt-3">Vaizdo įrašas apie darbą kompiuteriu.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service-media-item">
+                <h3>Įrašas iš YouTube</h3>
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/BoUVIhtqjAw" title="YouTube vaizdo įrašas" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="mb-0 mt-3">Vaizdo įrašas įterptas naudojant YouTube embed adresą.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service-media-item">
+                <h3>Laikrodžio tiksėjimas</h3>
+                <audio controls preload="none">
+                  <source src="assets/media/spinopel-quartz-clock-ticking-one-minute-253102.mp3" type="audio/mpeg">
+                  Jūsų naršyklė nepalaiko garso įrašo atkūrimo.
+                </audio>
+                <p class="mb-0 mt-3">Vienos minutės kvarcinio laikrodžio tiksėjimo įrašas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </section><!-- /Services Section -->
@@ -189,7 +286,7 @@
           <span>Copyright</span> <strong class="px-1 sitename">Antanas Gedgaudas</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          Designed by <a href="https://github.com/The5Anta/The5Anta.github.io">Antanas Gedgaudas</a> | <a href="https://github.com/The5Anta/The5Anta.github.io">Portfolio</a>
+          Designed by <a href="https://github.com/The5Anta/The5Anta.github.io">Antanas Gedgaudas</a> | <a href="https://github.com/The5Anta/The5Anta.github.io">Atlikti darbai</a>
         </div>
       </div>
     </div>
