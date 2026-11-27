@@ -703,6 +703,22 @@ a:focus-visible {
   font-size: 0.85rem;
 }
 
+.skill-status-select {
+  width: 100%;
+  margin-top: 0.85rem;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid rgba(184, 230, 159, 0.28);
+  border-radius: 0.55rem;
+  background: #172321;
+  color: #e2edec;
+  font: 500 0.82rem var(--technical-font);
+}
+
+.skill-status-select:focus-visible {
+  outline: 3px solid #d3efbf;
+  outline-offset: 2px;
+}
+
 .skill-statistics {
   margin-top: 1.25rem;
 }

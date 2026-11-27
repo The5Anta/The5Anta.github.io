@@ -74,15 +74,15 @@
         <div class="skill-overview" aria-label="Kompetencijų suvestinė">
           <article class="skill-overview-card">
             <span class="overview-label">Patirties taškai</span>
-            <strong>370 <span>XP</span></strong>
+            <strong id="skill-total-xp">0 <span>XP</span></strong>
           </article>
           <article class="skill-overview-card">
             <span class="overview-label">Dabartinis lygis</span>
-            <strong>4 <span>lygis</span></strong>
+            <strong id="skill-level">1 <span>lygis</span></strong>
           </article>
           <article class="skill-overview-card">
             <span class="overview-label">Rangas</span>
-            <strong>Profesionalas</strong>
+            <strong id="skill-rank">Pradedantysis</strong>
           </article>
         </div>
 
@@ -90,14 +90,14 @@
           <div class="skill-xp-heading">
             <div>
               <h2>Patirties progresas</h2>
-              <p>Pavyzdinis tikslas iki 500 XP</p>
+              <p id="skill-progress-range">Sekantis lygis</p>
             </div>
-            <strong>370 / 500 XP</strong>
+            <strong id="skill-progress-value">0 / 50 XP</strong>
           </div>
-          <div class="skill-xp-track" role="progressbar" aria-label="Patirties taškų progresas iki 500 XP" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100">
-            <span style="width: 74%"></span>
+          <div class="skill-xp-track" id="skill-progress-track" role="progressbar" aria-label="Patirties taškų progresas" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <span id="skill-progress-bar" style="width: 0%"></span>
           </div>
-          <p class="skill-xp-caption">Iki pavyzdinio 500 XP tikslo liko 130 XP.</p>
+          <p class="skill-xp-caption" id="skill-progress-caption">Iki sekancio lygio liko 50 XP.</p>
         </div>
 
         <div class="skill-board-heading">
@@ -112,100 +112,36 @@
           <section class="skill-column planned" aria-labelledby="planned-title">
             <div class="skill-column-heading">
               <h3 id="planned-title">Planuojama</h3>
-              <span class="skill-count">3</span>
+              <span class="skill-count">0</span>
             </div>
-            <article class="skill-card">
-              <div class="skill-card-heading">
-                <h4>PCB projektavimas</h4>
-                <span class="skill-status">Planuojama</span>
-              </div>
-              <p>Plokščių projektavimo ir gamybos paruošimo įgūdžiai.</p>
-              <strong class="skill-xp">+30 XP</strong>
-            </article>
-            <article class="skill-card">
-              <div class="skill-card-heading">
-                <h4>PLC valdymo sistemos</h4>
-                <span class="skill-status">Planuojama</span>
-              </div>
-              <p>Pramoninių valdiklių programavimas ir integracija.</p>
-              <strong class="skill-xp">+40 XP</strong>
-            </article>
-            <article class="skill-card">
-              <div class="skill-card-heading">
-                <h4>EMC bandymai</h4>
-                <span class="skill-status">Planuojama</span>
-              </div>
-              <p>Elektromagnetinio suderinamumo matavimai ir analizė.</p>
-              <strong class="skill-xp">+40 XP</strong>
-            </article>
           </section>
 
           <section class="skill-column learning" aria-labelledby="learning-title">
             <div class="skill-column-heading">
               <h3 id="learning-title">Mokomasi</h3>
-              <span class="skill-count">3</span>
+              <span class="skill-count">0</span>
             </div>
-            <article class="skill-card">
-              <div class="skill-card-heading">
-                <h4>Analoginė ir skaitmeninė elektronika</h4>
-                <span class="skill-status">Mokomasi</span>
-              </div>
-              <p>Grandinių analizė, projektavimas ir praktinis taikymas.</p>
-              <strong class="skill-xp">+50 XP</strong>
-            </article>
-            <article class="skill-card">
-              <div class="skill-card-heading">
-                <h4>Jutiklių integracija</h4>
-                <span class="skill-status">Mokomasi</span>
-              </div>
-              <p>Jutiklių parinkimas, prijungimas ir signalų apdorojimas.</p>
-              <strong class="skill-xp">+60 XP</strong>
-            </article>
-            <article class="skill-card">
-              <div class="skill-card-heading">
-                <h4>Pramoninis IoT</h4>
-                <span class="skill-status">Mokomasi</span>
-              </div>
-              <p>Pramoninių įrenginių ryšys ir nuotolinis stebėjimas.</p>
-              <strong class="skill-xp">+40 XP</strong>
-            </article>
           </section>
 
           <section class="skill-column completed" aria-labelledby="completed-title">
             <div class="skill-column-heading">
               <h3 id="completed-title">Atlikta</h3>
-              <span class="skill-count">2</span>
+              <span class="skill-count">0</span>
             </div>
-            <article class="skill-card">
-              <div class="skill-card-heading">
-                <h4>Elektroninių sistemų diagnostika</h4>
-                <span class="skill-status">Atlikta</span>
-              </div>
-              <p>Gedimų paieška, analizė ir patikimas jų šalinimas.</p>
-              <strong class="skill-xp">+60 XP</strong>
-            </article>
-            <article class="skill-card">
-              <div class="skill-card-heading">
-                <h4>Elektroninių schemų skaitymas</h4>
-                <span class="skill-status">Atlikta</span>
-              </div>
-              <p>Scheminių dokumentų interpretavimas ir taikymas.</p>
-              <strong class="skill-xp">+50 XP</strong>
-            </article>
           </section>
         </div>
 
         <div class="skill-statistics" aria-label="Įgūdžių statistika">
           <article class="skill-stat-card">
-            <span class="stat-number">8</span>
+            <span class="stat-number" id="skill-total-count">0</span>
             <span class="stat-label">Iš viso įgūdžių</span>
           </article>
           <article class="skill-stat-card">
-            <span class="stat-number">2</span>
+            <span class="stat-number" id="skill-completed-count">0</span>
             <span class="stat-label">Atlikti įgūdžiai</span>
           </article>
           <article class="skill-stat-card">
-            <span class="stat-number">25%</span>
+            <span class="stat-number" id="skill-completed-percent">0%</span>
             <span class="stat-label">Atliktų įgūdžių dalis</span>
           </article>
         </div>
@@ -247,6 +183,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
 
 </body>
 
