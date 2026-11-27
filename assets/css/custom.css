@@ -138,6 +138,291 @@ a:focus-visible {
   padding: 4.5rem 0 5rem;
 }
 
+#about {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-shapes {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-shapes .shape {
+  position: absolute;
+  display: block;
+  opacity: 0.62;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.25));
+}
+
+.shape-circle {
+  top: 9%;
+  right: 5%;
+  width: 88px;
+  height: 88px;
+  border: 12px solid #a8d98b;
+  border-radius: 50%;
+  animation: about-float 6s ease-in-out infinite, about-pulse 3s ease-in-out infinite;
+}
+
+.shape-square {
+  bottom: 8%;
+  left: 3%;
+  width: 74px;
+  height: 74px;
+  border: 9px solid #73b7aa;
+  border-radius: 14px;
+  animation: about-rotate 9s linear infinite;
+}
+
+.shape-triangle {
+  top: 42%;
+  right: 2%;
+  width: 0;
+  height: 0;
+  border-right: 42px solid transparent;
+  border-bottom: 72px solid #d3efbf;
+  border-left: 42px solid transparent;
+  animation: about-float-side 7s ease-in-out infinite;
+}
+
+#about > .container {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes about-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes about-pulse {
+  50% {
+    transform: scale(1.14);
+  }
+}
+
+@keyframes about-float {
+  0%, 100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: -18px 24px;
+  }
+}
+
+@keyframes about-float-side {
+  0%, 100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 22px -28px;
+  }
+}
+
+#services {
+  background: linear-gradient(125deg, #17352f, #315d50, #7da89a, #426b3b, #17352f);
+  background-size: 300% 300%;
+  animation: services-gradient 12s ease-in-out infinite;
+}
+
+@keyframes services-gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  .shape-circle {
+    width: 58px;
+    height: 58px;
+  }
+
+  .shape-square {
+    width: 54px;
+    height: 54px;
+  }
+
+  .shape-triangle {
+    border-right-width: 28px;
+    border-bottom-width: 48px;
+    border-left-width: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #services,
+  .about-shapes .shape {
+    animation: none;
+  }
+}
+
+.contact .php-email-form {
+  max-width: 960px;
+  margin-top: 2.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(184, 230, 159, 0.22);
+  border-radius: 1rem;
+  background-color: var(--surface-color);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+}
+
+.contact .php-email-form .form-label {
+  min-height: 2.5rem;
+  margin-bottom: 0.45rem;
+  color: var(--heading-color);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.contact .php-email-form input[type="number"].form-control {
+  min-height: 3rem;
+  border: 1px solid rgba(184, 230, 159, 0.32);
+  border-radius: 0.65rem;
+  background-color: #10201d;
+  color: var(--default-color);
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  box-shadow: none;
+}
+
+.contact .php-email-form input[type="tel"].form-control {
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border-radius: 0;
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+}
+
+.contact .php-email-form input[type="tel"].form-control:focus {
+  border-color: var(--accent-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  color: var(--default-color);
+  box-shadow: none;
+}
+
+.contact .php-email-form input[type="tel"].form-control::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  opacity: 1;
+}
+
+.contact .php-email-form input[type="tel"].form-control.is-invalid,
+.contact .php-email-form input[type="tel"].form-control.is-invalid:focus {
+  border-color: #ff7b7b;
+  box-shadow: 0 0 0 0.2rem rgba(255, 123, 123, 0.12);
+}
+
+.contact .php-email-form input[type="number"].form-control::placeholder {
+  color: #9db0ac;
+  opacity: 1;
+}
+
+.contact .php-email-form input[type="number"].form-control:focus {
+  border-color: #a8d98b;
+  background-color: #10201d;
+  box-shadow: 0 0 0 0.2rem rgba(168, 217, 139, 0.18);
+  color: #ffffff;
+}
+
+.contact .php-email-form .col-md-4 .form-label {
+  min-height: 3.2rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.contact .php-email-form .row {
+  --bs-gutter-x: 1.25rem;
+  --bs-gutter-y: 0.85rem;
+}
+
+.contact .php-email-form button[type="submit"]:disabled {
+  cursor: not-allowed;
+  border-color: #52615e;
+  background-color: #52615e;
+  box-shadow: none;
+  opacity: 0.65;
+  transform: none;
+}
+
+.contact-result {
+  display: none;
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(184, 230, 159, 0.28);
+  border-radius: 0.75rem;
+  background-color: var(--surface-color);
+  line-height: 1.9;
+}
+
+.contact-result.is-visible {
+  display: block;
+}
+
+.contact-result strong {
+  color: #c9eeb1;
+}
+
+.contact .php-email-form .form-control.is-invalid {
+  border-color: #ff7b7b;
+  box-shadow: 0 0 0 0.2rem rgba(255, 123, 123, 0.12);
+}
+
+.contact .php-email-form .field-error {
+  min-height: 1.35rem;
+  margin-top: 0.35rem;
+  color: #ff9a9a;
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.contact-form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.contact .php-email-form .contact-clear-button {
+  border-color: #aebfbb;
+  background-color: transparent;
+  color: #dce7e5;
+  box-shadow: none;
+}
+
+.contact .php-email-form .contact-clear-button:hover {
+  border-color: #d3efbf;
+  background-color: rgba(168, 217, 139, 0.12);
+  color: #d3efbf;
+}
+
+@media (max-width: 575px) {
+  .contact .php-email-form {
+    padding: 1.25rem 1rem;
+  }
+
+  .contact .php-email-form .form-label,
+  .contact .php-email-form .col-md-4 .form-label {
+    min-height: 0;
+  }
+
+  .contact-form-actions {
+    flex-direction: column;
+  }
+
+  .contact-form-actions button {
+    width: 100%;
+  }
+}
+
 .about .content {
   padding: clamp(1.5rem, 3vw, 2.5rem);
   border: 1px solid rgba(184, 230, 159, 0.2);
